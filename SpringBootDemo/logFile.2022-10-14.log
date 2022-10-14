@@ -1,0 +1,3 @@
+296  [main] INFO  org.example.logback.Application - <main> start
+964  [main] INFO  org.example.logback.Application - Starting Application on Z-A61-ZK0059 with PID 6036 (E:\workspace\spring-boot-demo\SpringBootDemo\demo-logback\target\classes started by 00771487 in E:\workspace\spring-boot-demo\SpringBootDemo)
+965  [main] INFO  org.example.logback.Application - No active profile set, falling back to default profiles: default

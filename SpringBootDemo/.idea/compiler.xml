@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="demo-helloworld" />
+        <module name="demo-logback" />
       </profile>
     </annotationProcessing>
   </component>
@@ -14,6 +15,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="SpringBootDemo" options="-parameters" />
       <module name="demo-helloworld" options="-parameters" />
+      <module name="demo-logback" options="-parameters" />
     </option>
   </component>
 </project>

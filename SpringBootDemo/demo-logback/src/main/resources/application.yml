@@ -1,0 +1,12 @@
+server:
+  port: 8101
+
+logging:
+  level:
+    root: info # 默认日志级别
+    org:
+      example:
+        logback:
+          controller: warn # 指定包的日志级别
+  file:
+    name: log.log # 指定日志文件

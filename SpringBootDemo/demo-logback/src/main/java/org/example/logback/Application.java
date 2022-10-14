@@ -1,4 +1,4 @@
-package org.example;
+package org.example.logback;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * 启动类
  *
  * @author gongmin
- * @date 2022/10/14 9:14
+ * @date 2022/10/14 9:57
  */
 @SpringBootApplication
 public class Application {
@@ -17,7 +17,6 @@ public class Application {
 
     public static void main(String[] args) {
         logger.info("<main> start");
-
         SpringApplication.run(Application.class, args);
     }
 }
