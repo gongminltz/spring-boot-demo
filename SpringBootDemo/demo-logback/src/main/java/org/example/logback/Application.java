@@ -9,14 +9,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * 启动类
  *
  * @author gongmin
- * @date 2022/10/14 9:57
+ * @date 2022/10/14 11:21
  */
 @SpringBootApplication
 public class Application {
     private static final Logger logger = LoggerFactory.getLogger(Application.class);
 
     public static void main(String[] args) {
-        logger.info("<main> start");
         SpringApplication.run(Application.class, args);
+        logger.info("<main> start");
     }
 }

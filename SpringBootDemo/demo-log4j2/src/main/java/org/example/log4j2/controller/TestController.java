@@ -1,4 +1,4 @@
-package org.example.logback.controller;
+package org.example.log4j2.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

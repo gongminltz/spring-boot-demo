@@ -9,4 +9,4 @@ logging:
         logback:
           controller: warn # 指定包的日志级别
   file:
-    name: log.log # 指定日志文件
+    name: log.log # 日志文件

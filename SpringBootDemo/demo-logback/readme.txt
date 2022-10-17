@@ -1,1 +1,2 @@
-本测试用例主要用来演示 如何对SpringBoot使用的默认日志框架logback进行日志级别的设置
+SpringBoot默认使用logback作为日志框架，默认日志级别为info
+我们可以通过修改配置文件来更改日志级别

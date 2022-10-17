@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="demo-helloworld" />
         <module name="demo-logback" />
+        <module name="demo-log4j2" />
       </profile>
     </annotationProcessing>
   </component>
@@ -15,6 +16,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="SpringBootDemo" options="-parameters" />
       <module name="demo-helloworld" options="-parameters" />
+      <module name="demo-log4j2" options="-parameters" />
       <module name="demo-logback" options="-parameters" />
     </option>
   </component>
