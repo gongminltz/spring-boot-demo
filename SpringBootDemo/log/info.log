@@ -8,3 +8,13 @@
 2022-10-17 11:03:04.488 INFO [main] org.example.log4j2.Application : Started Application in 1.765 seconds (JVM running for 2.867)
 2022-10-17 11:03:04.490 INFO [main] org.example.log4j2.Application : <main> start
 2022-10-17 11:03:09.562 INFO [http-nio-8102-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-17 11:03:37.414 INFO [main] org.example.log4j2.Application : Starting Application on Z-A61-ZK0059 with PID 2904 (E:\workspace\spring-boot-demo\SpringBootDemo\demo-log4j2\target\classes started by 00771487 in E:\workspace\spring-boot-demo\SpringBootDemo)
+2022-10-17 11:03:37.427 INFO [main] org.example.log4j2.Application : No active profile set, falling back to default profiles: default
+2022-10-17 11:03:38.325 INFO [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8102"]
+2022-10-17 11:03:38.326 INFO [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-10-17 11:03:38.326 INFO [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2022-10-17 11:03:38.418 INFO [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2022-10-17 11:03:38.721 INFO [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8102"]
+2022-10-17 11:03:38.806 INFO [main] org.example.log4j2.Application : Started Application in 1.778 seconds (JVM running for 2.858)
+2022-10-17 11:03:38.807 INFO [main] org.example.log4j2.Application : <main> start
+2022-10-17 11:03:50.558 INFO [http-nio-8102-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
