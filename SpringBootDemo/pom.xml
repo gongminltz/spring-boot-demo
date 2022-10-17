@@ -12,6 +12,7 @@
         <module>demo-helloworld</module>
         <module>demo-logback</module>
         <module>demo-log4j2</module>
+        <module>demo-mybatis</module>
     </modules>
 
     <parent>
