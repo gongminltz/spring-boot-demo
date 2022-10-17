@@ -8,9 +8,9 @@ logging:
 # 数据源配置
 spring:
   datasource:
-    username: yield
-    password: yield
-    url: jdbc:mysql://47.110.90.30:3306/yielddb?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: [db_username]
+    password: [db_password]
+    url: jdbc:mysql://[db_ip]:[db_port]/[db_name]]?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 # mybatis配置
