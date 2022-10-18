@@ -14,6 +14,7 @@
         <module>demo-log4j2</module>
         <module>demo-mybatis</module>
         <module>demo-multiple-data-source</module>
+        <module>demo-spring-boot-test</module>
     </modules>
 
     <parent>
