@@ -41,7 +41,7 @@ public class UserController {
             return null;
         }
 
-        logger.info("<getById> name = " +user.getName());
+        logger.info("<getById> name = " + user.getName());
         return user;
     }
 
@@ -77,5 +77,20 @@ public class UserController {
         }
 
         return users;
+    }
+
+    /**
+     * 新增用户并且配置用户角色
+     *
+     * @param userName 用户名字
+     * @param phone    手机号码
+     * @param address  地址
+     * @param roleId   角色id
+     * @return ok
+     */
+    @GetMapping("/addUserAndSetRole")
+    public String addUserAndSetRole(String userName, String phone, String address, String roleId) {
+        userService.addUserAndSetRole(userName, phone, address, roleId);
+        return "ok";
     }
 }
