@@ -15,6 +15,7 @@
         <module>demo-mybatis</module>
         <module>demo-multiple-data-source</module>
         <module>demo-spring-boot-test</module>
+        <module>demo-interceptor</module>
     </modules>
 
     <parent>
