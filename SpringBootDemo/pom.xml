@@ -13,6 +13,7 @@
         <module>demo-logback</module>
         <module>demo-log4j2</module>
         <module>demo-mybatis</module>
+        <module>demo-multiple-data-source</module>
     </modules>
 
     <parent>

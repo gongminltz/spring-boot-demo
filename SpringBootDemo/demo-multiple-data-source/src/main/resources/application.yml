@@ -1,0 +1,20 @@
+server:
+  port: 8103
+
+logging:
+  level:
+    root: info # 默认日志级别
+
+# 数据源配置
+spring:
+  datasource:
+    gm1:
+      username: gongmin
+      password: gongmin
+      jdbc-url: jdbc:mysql://localhost:3306/gm1?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    gm2:
+      username: gongmin
+      password: gongmin
+      jdbc-url: jdbc:mysql://localhost:3306/gm2?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+      driver-class-name: com.mysql.cj.jdbc.Driver
