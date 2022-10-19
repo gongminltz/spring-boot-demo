@@ -1,8 +1,11 @@
 package org.example.aop.aspect;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.json.JsonMapper;
 import lombok.extern.slf4j.Slf4j;
+import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
@@ -44,6 +47,11 @@ public class GlobalLogAspect extends BaseAspectSupport {
     @Pointcut("execution (* org.example.aop.controller.*.*(..))")
     public void log() {
 
+    }
+
+    @AfterReturning(pointcut = "log()", returning = "result")
+    public void afterReturning(JoinPoint joinPoint, Object result) throws JsonProcessingException {
+        log.info("<afterReturning> " + jsonMapper.writeValueAsString(result));
     }
 
 

@@ -18,6 +18,7 @@
         <module>demo-interceptor</module>
         <module>demo-filter</module>
         <module>demo-aop</module>
+        <module>demo-wrap-response</module>
     </modules>
 
     <parent>
