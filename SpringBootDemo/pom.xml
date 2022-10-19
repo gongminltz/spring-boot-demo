@@ -17,6 +17,7 @@
         <module>demo-spring-boot-test</module>
         <module>demo-interceptor</module>
         <module>demo-filter</module>
+        <module>demo-aop</module>
     </modules>
 
     <parent>
