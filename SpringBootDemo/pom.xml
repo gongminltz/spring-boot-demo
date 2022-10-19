@@ -19,6 +19,7 @@
         <module>demo-filter</module>
         <module>demo-aop</module>
         <module>demo-wrap-response</module>
+        <module>demo-global-exception-handler</module>
     </modules>
 
     <parent>
