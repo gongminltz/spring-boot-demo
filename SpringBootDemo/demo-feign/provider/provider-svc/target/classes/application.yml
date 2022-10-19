@@ -1,0 +1,16 @@
+server:
+  port: 8101
+
+spring:
+  application:
+    name: demo-feign-provider
+
+eureka:
+  instance:
+    preferIpAddress: true
+    instanceId: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+    metadataMap:
+      nodeId: ${client.nodeId}
+  client:
+    service-url:
+      defaultZone: http://gongmin:gongmin@localhost:8100/eureka

@@ -20,6 +20,12 @@
         <module>demo-aop</module>
         <module>demo-wrap-response</module>
         <module>demo-global-exception-handler</module>
+        <module>demo-feign</module>
+        <module>demo-feign/provider</module>
+        <module>demo-feign/client</module>
+        <module>demo-feign/provider/provider-api</module>
+        <module>demo-feign/provider/provider-svc</module>
+        <module>demo-eureka</module>
     </modules>
 
     <parent>
@@ -31,10 +37,18 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <spring-cloud.version>Hoxton.SR12</spring-cloud.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
