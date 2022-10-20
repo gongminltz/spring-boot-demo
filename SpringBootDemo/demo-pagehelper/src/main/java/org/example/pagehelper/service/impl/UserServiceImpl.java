@@ -1,5 +1,6 @@
 package org.example.pagehelper.service.impl;
 
+import com.github.pagehelper.ISelect;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.example.pagehelper.entity.User;
@@ -23,8 +24,12 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public PageInfo<User> getList(int pageNum, int pageSize) {
-        PageHelper.startPage(pageNum, pageSize);
-        List<User> userList = userMapper.selectAll();
-        return new PageInfo<>(userList);
+        // 方法一：
+//        PageHelper.startPage(pageNum, pageSize);
+//        List<User> userList = userMapper.selectAll();
+//        return new PageInfo<>(userList);
+
+        // 方法二：
+        return PageHelper.startPage(pageNum, pageSize).doSelectPageInfo(() -> userMapper.selectAll());
     }
 }
