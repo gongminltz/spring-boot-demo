@@ -31,6 +31,7 @@
         <module>demo-customize-starter</module>
         <module>demo-customize-starter/my-spring-boot-starter</module>
         <module>demo-customize-starter/my-spring-boot-starter-test</module>
+        <module>demo-async</module>
     </modules>
 
     <parent>
