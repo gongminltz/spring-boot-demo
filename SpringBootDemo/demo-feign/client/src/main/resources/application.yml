@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: demo-feign-client
+  main:
+    allow-bean-definition-overriding: true
 
 eureka:
   instance:
@@ -14,3 +16,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://gongmin:gongmin@localhost:8100/eureka
+
+demo:
+  mybatis:
+    serverUrl: http://localhost:8103

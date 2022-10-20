@@ -15,7 +15,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  */
 @SpringBootApplication
 @EnableEurekaClient
-@EnableFeignClients(value = "org.example.feign.provider.api")
+@EnableFeignClients(value = {"org.example.feign.provider.api", "org.example.feign.client.third"})
 public class Application {
     private static final Logger logger = LoggerFactory.getLogger(Application.class);
 

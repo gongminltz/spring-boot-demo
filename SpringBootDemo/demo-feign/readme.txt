@@ -1,1 +1,3 @@
 微服务调用框架feign
+1 使用openfeign进行内部微服务间的接口调用
+2 使用openfeign进行第三方接口调用
