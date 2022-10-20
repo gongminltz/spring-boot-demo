@@ -28,6 +28,9 @@
         <module>demo-eureka</module>
         <module>demo-caffeine</module>
         <module>demo-pagehelper</module>
+        <module>demo-customize-starter</module>
+        <module>demo-customize-starter/my-spring-boot-starter</module>
+        <module>demo-customize-starter/my-spring-boot-starter-test</module>
     </modules>
 
     <parent>

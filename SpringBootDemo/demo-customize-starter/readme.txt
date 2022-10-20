@@ -1,0 +1,4 @@
+如何自定义starter
+
+自定义一个拦截器starter，用于打印每一个请求耗时
+同时示例中也包含了ThreadLocal的使用

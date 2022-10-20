@@ -1,0 +1,10 @@
+server:
+  port:
+    8104
+
+logging:
+  level:
+    root: info
+    org:
+      example:
+        mystarter: debug
