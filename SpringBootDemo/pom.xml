@@ -27,6 +27,7 @@
         <module>demo-feign/provider/provider-svc</module>
         <module>demo-eureka</module>
         <module>demo-caffeine</module>
+        <module>demo-pagehelper</module>
     </modules>
 
     <parent>
