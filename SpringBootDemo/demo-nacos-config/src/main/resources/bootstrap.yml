@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: demo-nacos-config
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848 #Nacos作为配置中心地址
+        namespace: 20ec79b9-3237-4db1-87e8-45041094f29d # 配置文件所属命名空间，常用语区分不同配置环境
+        group: DEFAULT_GROUP # 配置分组所属分组，常用语区分不同的项目
+        username: nacos # nacos-server用户名
+        password: nacos # nacos-server密码
+        ext-config[0]: # 第一个配置文件， 如果只有一个配置文件，可以通过prefix参数来指定
+          data-id: demo-nacos-config-dev.properties  # 配置文件名称
+          refresh: true # 配置文件自动刷新
+        ext-config[1]: # 第二个配置文件
+          data-id: password.properties  # 配置文件名称
+          refresh: true # 配置文件自动刷新
