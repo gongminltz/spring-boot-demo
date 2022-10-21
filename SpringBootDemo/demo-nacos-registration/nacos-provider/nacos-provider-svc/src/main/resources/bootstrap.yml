@@ -1,0 +1,9 @@
+# nacos配置
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        namespace: 20ec79b9-3237-4db1-87e8-45041094f29d
+        username: nacos
+        password: nacos

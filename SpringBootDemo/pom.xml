@@ -33,6 +33,11 @@
         <module>demo-customize-starter/my-spring-boot-starter-test</module>
         <module>demo-async</module>
         <module>demo-nacos-config</module>
+        <module>demo-nacos-registration</module>
+        <module>demo-nacos-registration/nacos-client</module>
+        <module>demo-nacos-registration/nacos-provider</module>
+        <module>demo-nacos-registration/nacos-provider/nacos-provider-api</module>
+        <module>demo-nacos-registration/nacos-provider/nacos-provider-svc</module>
     </modules>
 
     <parent>
