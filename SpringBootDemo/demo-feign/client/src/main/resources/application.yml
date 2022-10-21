@@ -20,3 +20,9 @@ eureka:
 demo:
   mybatis:
     serverUrl: http://localhost:8103
+
+# hkws
+hkws:
+  url: [url]
+  appKey: [appKey]
+  secret: [secret]

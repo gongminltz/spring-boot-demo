@@ -32,6 +32,7 @@
         <module>demo-customize-starter/my-spring-boot-starter</module>
         <module>demo-customize-starter/my-spring-boot-starter-test</module>
         <module>demo-async</module>
+        <module>demo-nacos-config</module>
     </modules>
 
     <parent>
