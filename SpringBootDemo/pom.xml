@@ -38,6 +38,12 @@
         <module>demo-nacos-registration/nacos-provider</module>
         <module>demo-nacos-registration/nacos-provider/nacos-provider-api</module>
         <module>demo-nacos-registration/nacos-provider/nacos-provider-svc</module>
+        <module>demo-sentinel</module>
+        <module>demo-seata</module>
+        <module>demo-mongodb</module>
+        <module>demo-es</module>
+        <module>demo-sharding-jdbc</module>
+        <module>demo-kafka</module>
     </modules>
 
     <parent>
