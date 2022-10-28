@@ -1,0 +1,27 @@
+server:
+  port: 8109
+
+spring:
+  application:
+    name: seata-client
+  # 数据源配置
+  datasource:
+    username: gongmin
+    password: gongmin
+    url: jdbc:mysql://localhost:3306/gm1?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+seata:
+  tx-service-group: my_test_tx_group
+  service:
+    grouplist: localhost:8091
+
+eureka:
+  instance:
+    preferIpAddress: true
+    instanceId: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+    metadataMap:
+      nodeId: ${client.nodeId}
+  client:
+    service-url:
+      defaultZone: http://gongmin:gongmin@localhost:8100/eureka

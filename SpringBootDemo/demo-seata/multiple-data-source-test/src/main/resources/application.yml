@@ -1,0 +1,23 @@
+server:
+  port: 8108
+
+spring:
+  application:
+    name: demo-seata
+  # 数据源配置
+  datasource:
+    gm1:
+      username: gongmin
+      password: gongmin
+      jdbc-url: jdbc:mysql://localhost:3306/gm1?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    gm2:
+      username: gongmin
+      password: gongmin
+      jdbc-url: jdbc:mysql://localhost:3306/gm2?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+seata:
+  tx-service-group: my_test_tx_group
+  service:
+    grouplist: localhost:8091

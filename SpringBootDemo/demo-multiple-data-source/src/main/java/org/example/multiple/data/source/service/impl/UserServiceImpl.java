@@ -72,5 +72,7 @@ public class UserServiceImpl implements UserService {
         userRole.setRoleId(roleId);
 
         userRoleMapper.insert(userRole);
+
+        throw new RuntimeException();
     }
 }

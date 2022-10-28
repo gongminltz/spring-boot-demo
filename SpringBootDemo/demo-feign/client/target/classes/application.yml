@@ -21,8 +21,8 @@ demo:
   mybatis:
     serverUrl: http://localhost:8103
 
-# 海康威视摄像头accessToken请求参数
+# hkws
 hkws:
-  url: https://open.ys7.com
-  appKey: f78d4eeb5cff491eb65914dc9ec94968
-  secret: ec12908fb7f058e095f185ec190d372a
+  url: [url]
+  appKey: [appKey]
+  secret: [secret]

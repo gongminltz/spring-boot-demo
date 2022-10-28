@@ -44,6 +44,11 @@
         <module>demo-es</module>
         <module>demo-sharding-jdbc</module>
         <module>demo-kafka</module>
+        <module>demo-seata/multiple-data-source-test</module>
+        <module>demo-seata/seata-provider</module>
+        <module>demo-seata/seata-client</module>
+        <module>demo-seata/seata-provider/seata-provider-api</module>
+        <module>demo-seata/seata-provider/seata-provider-svc</module>
     </modules>
 
     <parent>
