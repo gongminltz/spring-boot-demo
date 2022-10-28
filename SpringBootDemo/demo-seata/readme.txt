@@ -5,4 +5,4 @@
 2 seata-provider和seata-client两个模块演示了微服务模式下如何使用seata进行分布式事务管理
 2.1 需要启动一个eureka作为注册中心
 2.2 需要启动一个seata-server作为TC
-2.3 
+2.3 需要对微服务调用请求进行拦截，进行xid的传递
