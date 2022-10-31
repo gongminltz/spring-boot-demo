@@ -49,6 +49,7 @@
         <module>demo-seata/seata-client</module>
         <module>demo-seata/seata-provider/seata-provider-api</module>
         <module>demo-seata/seata-provider/seata-provider-svc</module>
+        <module>demo-dm</module>
     </modules>
 
     <parent>
