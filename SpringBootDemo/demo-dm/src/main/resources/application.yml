@@ -18,9 +18,32 @@ spring:
     username: SYSDBA
     password: SYSDBA
     druid:
-      test-while-idle: false
+      # filters这里的wall去掉！！！！！
+      filters: stat,slf4j
+      filter:
+        slf4j:
+          enabled: true
+        stat:
+          log-slow-sql: true
+          merge-sql: true
+          slow-sql-millis: 3000
+        # 这边的wall也得去掉！！！！！！
+        # wall:
+        #   config:
+        #     ····这里的配置信息就先省略了····
+        #   enabled: true
 
-# mybatis配置
-mybatis:
-  mapper-locations: classpath:mapper/*Mapper.xml
-  type-aliases-package: org.example.dm.entity
+# mybatis-plus配置
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    auto-mapping-behavior: full
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath*:mapper/**/*Mapper.xml
+  global-config:
+    # 逻辑删除配置
+    db-config:
+      # 删除前
+      logic-not-delete-value: 1
+      # 删除后
+      logic-delete-value: 0

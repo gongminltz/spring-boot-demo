@@ -4,10 +4,11 @@ import org.example.dm.entity.User;
 import org.example.dm.mapper.UserMapper;
 import org.example.dm.service.UserService;
 import org.springframework.stereotype.Service;
-import tk.mybatis.mapper.entity.Example;
 
 import javax.annotation.Resource;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * 用户服务
@@ -22,15 +23,15 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User getById(String id) {
-        return userMapper.selectByPrimaryKey(id);
+        return userMapper.selectById(id);
     }
 
     @Override
     public List<User> getByName(String name) {
-        Example example = new Example(User.class);
-        example.createCriteria().andEqualTo("name", name);
+        Map<String, Object> map = new HashMap<>();
+        map.put("name", name);
 
-        return userMapper.selectByExample(example);
+        return userMapper.selectByMap(map);
     }
 
     @Override

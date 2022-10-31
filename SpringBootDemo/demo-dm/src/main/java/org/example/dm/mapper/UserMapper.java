@@ -1,8 +1,8 @@
 package org.example.dm.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Param;
 import org.example.dm.entity.User;
-import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;
 
@@ -12,7 +12,7 @@ import java.util.List;
  * @author gongmin
  * @date 2022/10/17 15:46
  */
-public interface UserMapper extends Mapper<User> {
+public interface UserMapper extends BaseMapper<User> {
     /**
      * 通过电话号码获取
      *

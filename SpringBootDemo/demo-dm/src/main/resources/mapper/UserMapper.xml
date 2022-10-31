@@ -2,15 +2,15 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.example.dm.mapper.UserMapper">
     <resultMap id="BaseMapper" type="org.example.dm.entity.User">
-        <id column="ID" property="id" />
-        <result column="NAME" property="name" />
-        <result column="PHONE" property="phone" />
-        <result column="ADDRESS" property="address" />
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="phone" property="phone" />
+        <result column="address" property="address" />
     </resultMap>
 
     <select id="getByPhone" resultMap="BaseMapper">
-        select "ID", "NAME", "PHONE", "ADDRESS"
-        from "SYSDBA"."USER"
-        where "PHONE" = #{phone}
+        select "id", "name", "phone", "address"
+        from "SYSDBA"."user"
+        where "phone" = #{phone}
     </select>
 </mapper>
