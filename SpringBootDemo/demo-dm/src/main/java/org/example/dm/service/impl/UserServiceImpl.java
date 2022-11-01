@@ -31,6 +31,8 @@ public class UserServiceImpl implements UserService {
         Map<String, Object> map = new HashMap<>();
         map.put("name", name);
 
+        userMapper.selectList()
+
         return userMapper.selectByMap(map);
     }
 

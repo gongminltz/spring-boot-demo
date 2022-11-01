@@ -1,0 +1,5 @@
+logging:
+  level:
+    root: info
+  file:
+    name: demo-war.log # 日志文件
