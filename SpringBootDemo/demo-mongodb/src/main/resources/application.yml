@@ -1,0 +1,8 @@
+spring:
+  data:
+    mongodb:
+      #uri: mongodb://gongmin:gongmin@ac-0hgynyw-shard-00-01.khapmn6.mongodb.net:27017/gongmin
+      uri: mongodb+srv://gongmin:gongmin@cluster0.khapmn6.mongodb.net/gongmin
+logging:
+  level:
+    org.springframework.data.mongodb.core: debug
