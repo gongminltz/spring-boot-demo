@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="org.example.dm.mapper.UserMapper">
-    <resultMap id="BaseMapper" type="org.example.dm.entity.User">
+<mapper namespace="org.example.dm.tk.mapper.UserMapper">
+    <resultMap id="BaseMapper" type="org.example.dm.tk.entity.User">
         <id column="id" property="id" />
         <result column="name" property="name" />
         <result column="phone" property="phone" />

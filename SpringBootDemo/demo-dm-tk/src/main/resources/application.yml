@@ -1,0 +1,39 @@
+server:
+  port: 8103
+
+logging:
+  level:
+    root: info # 默认日志级别
+    org:
+      example:
+        dm: debug
+
+# 数据源配置
+spring:
+  datasource:
+    name: dm8
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: dm.jdbc.driver.DmDriver
+    url: jdbc:dm://localhost:5236/SYSDBA?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf-8
+    username: SYSDBA
+    password: SYSDBA
+    druid:
+      # filters这里的wall去掉！！！！！
+      filters: stat,slf4j
+      filter:
+        slf4j:
+          enabled: true
+        stat:
+          log-slow-sql: true
+          merge-sql: true
+          slow-sql-millis: 3000
+        # 这边的wall也得去掉！！！！！！
+        # wall:
+        #   config:
+        #     ····这里的配置信息就先省略了····
+        #   enabled: true
+
+# mybatis配置
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: org.example.dm.tk.entity

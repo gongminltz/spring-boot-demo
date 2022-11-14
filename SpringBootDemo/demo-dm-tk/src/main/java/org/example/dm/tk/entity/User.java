@@ -1,8 +1,9 @@
-package org.example.dm.entity;
+package org.example.dm.tk.entity;
 
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
+
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  * 用户表
@@ -11,9 +12,9 @@ import lombok.Data;
  * @date 2022/10/17 15:41
  */
 @Data
-@TableName(value = "user_0")
+@Table(name = "user_0")
 public class User {
-    @TableId
+    @Id
     private String id;
     private String name;
     private String phone;

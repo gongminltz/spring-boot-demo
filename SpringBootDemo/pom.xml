@@ -51,6 +51,7 @@
         <module>demo-seata/seata-provider/seata-provider-svc</module>
         <module>demo-dm</module>
         <module>demo-war</module>
+        <module>demo-dm-tk</module>
     </modules>
 
     <parent>
