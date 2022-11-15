@@ -52,6 +52,7 @@
         <module>demo-dm</module>
         <module>demo-war</module>
         <module>demo-dm-tk</module>
+        <module>demo-websocket</module>
     </modules>
 
     <parent>
