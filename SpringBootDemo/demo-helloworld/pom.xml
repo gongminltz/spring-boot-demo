@@ -27,4 +27,21 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
     </dependencies>
+
+    <build>
+        <finalName>demo-helloworld</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <!--配置springboot入口类-->
+                <configuration>
+                    <fork>true</fork>
+                    <jvmArguments>Dfile.encoding=UTF-8</jvmArguments>
+                    <!--配置入口类的标签名-->
+                    <mainClass>org.example.helloworld.org.example.mybatis.interceptor.Application</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

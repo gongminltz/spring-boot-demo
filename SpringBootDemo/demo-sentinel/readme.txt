@@ -8,7 +8,7 @@ spring.cloud.sentinel.eager = true
 
 3.2 在application配置文件中通过如下配置将限流参数持久化到nacos
 spring.cloud.sentinel.datasource.ds.nacos.server-addr= localhost:8848
-spring.cloud.sentinel.datasource.ds.nacos.data_id= sentinel-service.json
+spring.cloud.sentinel.datasource.ds.nacos.data_id= sentinel-org.example.mybatis.interceptor.service.json
 spring.cloud.sentinel.datasource.ds.nacos.group-id= DEFAULT_GROUP
 spring.cloud.sentinel.datasource.ds.nacos.data-type= json
 spring.cloud.sentinel.datasource.ds.nacos.rule-type= system

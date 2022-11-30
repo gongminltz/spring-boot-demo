@@ -61,7 +61,7 @@
                     <fork>true</fork>
                     <jvmArguments>Dfile.encoding=UTF-8</jvmArguments>
                     <!--配置入口类的标签名-->
-                    <mainClass>org.example.war.Application</mainClass>
+                    <mainClass>org.example.war.org.example.mybatis.interceptor.Application</mainClass>
                 </configuration>
             </plugin>
         </plugins>

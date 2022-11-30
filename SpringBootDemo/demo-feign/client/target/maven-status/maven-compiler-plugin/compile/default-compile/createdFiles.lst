@@ -1,0 +1,11 @@
+org\example\feign\client\third\FeignFormSupportConfig.class
+org\example\feign\client\controller\TestController.class
+org\example\feign\client\third\HkwsApi.class
+org\example\feign\client\Application.class
+org\example\feign\client\dto\User.class
+org\example\feign\client\dto\GetAccessTokenResponse.class
+org\example\feign\client\service\HkwsService.class
+org\example\feign\client\third\MybatisUserApi.class
+org\example\feign\client\dto\HkwsBaseResponse.class
+org\example\feign\client\dto\GetAccessTokenResponse$Data.class
+org\example\feign\client\service\impl\HkwsServiceImpl.class

@@ -53,6 +53,8 @@
         <module>demo-war</module>
         <module>demo-dm-tk</module>
         <module>demo-websocket</module>
+        <module>demo-mybatis-interceptor</module>
+        <module>demo-redis-distributed-lock</module>
     </modules>
 
     <parent>

@@ -1,0 +1,3 @@
+org\example\nacos\provider\dto\UserDto$UserDtoBuilder.class
+org\example\nacos\provider\dto\UserDto.class
+org\example\nacos\provider\api\UserApi.class

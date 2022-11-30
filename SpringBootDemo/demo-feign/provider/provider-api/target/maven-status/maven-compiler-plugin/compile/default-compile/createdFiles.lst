@@ -1,0 +1,3 @@
+org\example\feign\provider\api\UserApi.class
+org\example\feign\provider\dto\UserDto$UserDtoBuilder.class
+org\example\feign\provider\dto\UserDto.class
