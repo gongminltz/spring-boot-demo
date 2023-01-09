@@ -23,6 +23,6 @@ demo:
 
 # hkws
 hkws:
-  url: [url]
-  appKey: [appKey]
-  secret: [secret]
+  url: http://www.baidu.com
+  appKey: appKey
+  secret: secret

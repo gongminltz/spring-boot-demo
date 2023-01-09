@@ -55,6 +55,11 @@
         <module>demo-websocket</module>
         <module>demo-mybatis-interceptor</module>
         <module>demo-redis-distributed-lock</module>
+        <module>demo-webflux</module>
+        <module>demo-dynamic-jar</module>
+        <module>demo-dynamic-jar/dynamic-jar</module>
+        <module>demo-dynamic-jar/dynamic-jar-test</module>
+        <module>demo-python</module>
     </modules>
 
     <parent>

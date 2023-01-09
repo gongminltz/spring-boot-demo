@@ -11,13 +11,11 @@ import javax.persistence.Table;
  * @author gongmin
  * @date 2022/10/17 15:41
  */
-@Table(name = "user")
+@Table(name = "user_role")
 @Data
-public class User {
+public class UserRole {
     @Id
     private Long id;
-    private String sex;
-    private String name;
-    private String phone;
-    private String address;
+    private Long userId;
+    private Long roleId;
 }
