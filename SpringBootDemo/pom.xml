@@ -60,6 +60,11 @@
         <module>demo-dynamic-jar/dynamic-jar</module>
         <module>demo-dynamic-jar/dynamic-jar-test</module>
         <module>demo-python</module>
+        <module>demo-spi</module>
+        <module>demo-spi/spi-tv-api</module>
+        <module>demo-spi/spi-tv-tcl</module>
+        <module>demo-spi/spi-tv-chuangwei</module>
+        <module>demo-spi/spi-test</module>
     </modules>
 
     <parent>

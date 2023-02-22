@@ -16,12 +16,26 @@ public class Sum {
     }
 
     public int sum(Integer start, Integer end) {
-        int total = 10;
+        int total = 0;
         for (int i = start; i <= end; i++) {
             total = Add.add(total, i);
             System.out.println("total = " + total);
         }
 
         return total;
+    }
+
+    /**
+     * 计算连续多个整数的和
+     *
+     * @param param, [start],[end]
+     * @return 和
+     */
+    public String start(String param) {
+        String[] params = param.split(",");
+        int start = Integer.parseInt(params[0]);
+        int end = Integer.parseInt(params[1]);
+
+        return String.valueOf(sum(start, end));
     }
 }
