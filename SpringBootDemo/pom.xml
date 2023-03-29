@@ -65,6 +65,8 @@
         <module>demo-spi/spi-tv-tcl</module>
         <module>demo-spi/spi-tv-chuangwei</module>
         <module>demo-spi/spi-test</module>
+        <module>demo-web-client</module>
+        <module>demo-mockito</module>
     </modules>
 
     <parent>
@@ -103,6 +105,12 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 </project>

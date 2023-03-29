@@ -1,19 +1,21 @@
-import plus
 import sys
-
-def sum(start, end):
-    total = 0
-    for i in range(start, end):
-        total = plus.add(total, i)
-
-    print(total)
-    return total
+import requests
 
 if __name__ == '__main__':
-    param = sys.argv[1]
+    traceId = sys.argv[1]
+    callbackUrl = sys.argv[2]
+    param = sys.argv[3]
+
     params = param.split(',')
-    start = int(params[0])
-    end = int(params[1])
-    print(start)
-    print(end)
-    sum(start, end)
+    num1 = int(params[0])
+    num2 = int(params[1])
+
+    print("traceId = ", traceId)
+    print("callbackUrl = ", callbackUrl)
+    print(num1, " + ", num2, " = ", (num1 + num2))
+
+    requests.post(url = callbackUrl,
+        headers = {"Content-Type": "application/x-www-form-urlencoded"},
+        data = {"result": num1 + num2}
+        )
+

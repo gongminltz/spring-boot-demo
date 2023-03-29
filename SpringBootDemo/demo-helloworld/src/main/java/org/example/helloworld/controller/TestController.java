@@ -29,6 +29,7 @@ public class TestController {
     @GetMapping("/waitTest")
     public String waitTest(long duration) {
         try {
+            log.info("<waitTest> duration = " + duration);
             Thread.sleep(duration * 1000);
         } catch (InterruptedException e) {
             log.error(e.getMessage(), e);

@@ -30,7 +30,8 @@ public class Application {
 
     public static void test() {
         try {
-            String[] execParam = {"python", "E:\\\\workspace\\\\spring-boot-demo\\\\SpringBootDemo\\\\demo-python\\\\src\\\\main\\\\resources\\\\sum.py", "1,10"};
+            String[] execParam = {"C:\\Users\\00771487\\AppData\\Local\\Programs\\Python\\Python310\\python.exe", "E:\\\\workspace\\\\spring-boot-demo\\\\SpringBootDemo\\\\demo-python\\\\src\\\\main\\\\resources\\\\sum.py",
+                    "traceId_123", "http://localhost:9090/algorithm/v1/callback/traceId_123", "1,10"};
             Process pr = Runtime.getRuntime().exec(execParam);
             BufferedReader in = new BufferedReader(new InputStreamReader(pr.getInputStream()));
             String line;
@@ -38,7 +39,6 @@ public class Application {
                 System.out.println(line);
             }
             in.close();
-            System.out.println("end");
             pr.waitFor();
             InputStream errorStream = pr.getErrorStream();
             BufferedReader error = new BufferedReader(new InputStreamReader(errorStream, "gbk"));
