@@ -67,6 +67,7 @@
         <module>demo-spi/spi-test</module>
         <module>demo-web-client</module>
         <module>demo-mockito</module>
+        <module>demo-hikaricp</module>
     </modules>
 
     <parent>
