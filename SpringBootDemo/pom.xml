@@ -68,6 +68,7 @@
         <module>demo-web-client</module>
         <module>demo-mockito</module>
         <module>demo-hikaricp</module>
+        <module>demo-stream</module>
     </modules>
 
     <parent>
