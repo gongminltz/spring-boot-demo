@@ -1,5 +1,7 @@
 package org.example.mybatis.service.impl;
 
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
 import org.example.mybatis.entity.User;
 import org.example.mybatis.mapper.UserMapper;
 import org.example.mybatis.service.UserService;

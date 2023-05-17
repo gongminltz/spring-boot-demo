@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 
 /**
  * 用户表
@@ -13,7 +14,9 @@ import javax.persistence.Table;
  */
 @Table(name = "user")
 @Data
-public class User {
+public class User implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     @Id
     private Long id;
     private String sex;

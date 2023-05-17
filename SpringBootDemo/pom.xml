@@ -69,6 +69,10 @@
         <module>demo-mockito</module>
         <module>demo-hikaricp</module>
         <module>demo-stream</module>
+        <module>demo-java-agent</module>
+        <module>demo-java-agent/my-java-agent</module>
+        <module>demo-java-agent/java-agent-test</module>
+        <module>demo-custom-valid</module>
     </modules>
 
     <parent>

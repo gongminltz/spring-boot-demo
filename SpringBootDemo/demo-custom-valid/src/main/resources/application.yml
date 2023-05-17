@@ -4,7 +4,6 @@ server:
 logging:
   level:
     root: info # 默认日志级别
-    org.example.mybatis.mapper: debug
 
 # 数据源配置
 spring:
@@ -17,6 +16,4 @@ spring:
 # mybatis配置
 mybatis:
   mapper-locations: classpath:mapper/*Mapper.xml
-  type-aliases-package: org.example.mybatis.entity
-  configuration:
-    cache-enabled: true
+  type-aliases-package: org.example.custom.valid.entity

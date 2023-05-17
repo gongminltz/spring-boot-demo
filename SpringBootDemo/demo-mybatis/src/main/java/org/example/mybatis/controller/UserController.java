@@ -1,5 +1,7 @@
 package org.example.mybatis.controller;
 
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
 import org.example.mybatis.entity.User;
 import org.example.mybatis.service.UserService;
 import org.slf4j.Logger;
@@ -27,6 +29,9 @@ public class UserController {
     @Resource
     private UserService userService;
 
+    @Resource
+    private SqlSessionFactory sessionFactory;
+
     /**
      * 通过id获取用户信息
      *
@@ -41,7 +46,7 @@ public class UserController {
             return null;
         }
 
-        logger.info("<getById> name = " +user.getName());
+        logger.info("<getById> user = " + user);
         return user;
     }
 
