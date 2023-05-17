@@ -73,6 +73,7 @@
         <module>demo-java-agent/my-java-agent</module>
         <module>demo-java-agent/java-agent-test</module>
         <module>demo-custom-valid</module>
+        <module>demo-mybatis-entityparam-autoset</module>
     </modules>
 
     <parent>

@@ -39,7 +39,7 @@
                     <fork>true</fork>
                     <jvmArguments>Dfile.encoding=UTF-8</jvmArguments>
                     <!--配置入口类的标签名-->
-                    <mainClass>org.example.helloworld.Application</mainClass>
+                    <mainClass>org.example.helloworld.org.example.mybatis.entityparam.autoset.Application</mainClass>
                 </configuration>
             </plugin>
         </plugins>

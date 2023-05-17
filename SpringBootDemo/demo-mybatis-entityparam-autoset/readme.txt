@@ -1,0 +1,1 @@
+mybatis entity参数自动填充

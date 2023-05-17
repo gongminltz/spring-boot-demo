@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.mybatis.entityparam.autoset.mapper.UserMapper">
+    <resultMap id="BaseMapper" type="org.example.mybatis.entityparam.autoset.entity.User">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="phone" property="phone" />
+        <result column="address" property="address" />
+    </resultMap>
+
+    <select id="getByPhone" resultMap="BaseMapper">
+        select id, name, phone, address
+        from user
+        where phone = #{phone}
+    </select>
+</mapper>

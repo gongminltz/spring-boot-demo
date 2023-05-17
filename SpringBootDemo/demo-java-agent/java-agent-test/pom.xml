@@ -29,7 +29,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>org.example.java.agent.test.Application</mainClass>
+                            <mainClass>org.example.java.agent.test.org.example.mybatis.entityparam.autoset.Application</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
