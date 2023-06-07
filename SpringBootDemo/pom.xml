@@ -74,6 +74,7 @@
         <module>demo-java-agent/java-agent-test</module>
         <module>demo-custom-valid</module>
         <module>demo-mybatis-entityparam-autoset</module>
+        <module>demo-log4j2-sensitive</module>
     </modules>
 
     <parent>

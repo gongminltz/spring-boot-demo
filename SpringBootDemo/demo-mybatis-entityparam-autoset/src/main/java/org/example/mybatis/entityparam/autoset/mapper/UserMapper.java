@@ -12,7 +12,7 @@ import java.util.List;
  * @author gongmin
  * @date 2022/10/17 15:46
  */
-public interface UserMapper extends Mapper<User> {
+public interface UserMapper extends Mapper<User>, BatchInsertMapper<User>, BatchUpdateMapper<User> {
     /**
      * 通过电话号码获取
      *

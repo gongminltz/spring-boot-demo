@@ -4,7 +4,7 @@ server:
 logging:
   level:
     root: info # 默认日志级别
-    org.example.mybatis.mapper: debug
+    org.example.mybatis.entityparam.autoset.mapper: debug
 
 # 数据源配置
 spring:

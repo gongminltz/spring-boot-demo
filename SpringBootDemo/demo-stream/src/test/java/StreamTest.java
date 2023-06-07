@@ -1,5 +1,9 @@
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -60,6 +64,37 @@ public class StreamTest {
                 .forEach(System.out::println);
     }
 
+    /**
+     * 分组取最大
+     */
+    @Test
+    public void groupMax() {
+        Stream<User> userStream = Stream.of(
+                User.builder()
+                        .name("龚敏")
+                        .age(35)
+                        .gender("男")
+                        .build(),
+
+                User.builder()
+                        .name("龚晓迪")
+                        .age(20)
+                        .gender("男")
+                        .build(),
+
+                User.builder()
+                        .name("龚晓曦")
+                        .age(18)
+                        .gender("女")
+                        .build()
+        );
+
+        List<User> users = new ArrayList<>(
+                userStream.collect(Collectors.toMap(User::getGender, Function.identity(), (user1, user2) -> user1.getAge() > user2.getAge() ? user1 : user2))
+                        .values());
+        System.out.println("ok");
+    }
+
     @Test
     public void sum() {
         Stream<User> userStream = Stream.of(
@@ -117,5 +152,45 @@ public class StreamTest {
                 .orElse(0);
 
         System.out.println(ageSum);
+    }
+
+    /**
+     * 找出最大的
+     */
+    @Test
+    public void max() {
+        Stream<User> userStream = Stream.of(
+                User.builder()
+                        .name("龚敏")
+                        .age(35)
+                        .gender("男")
+                        .build(),
+
+                User.builder()
+                        .name("龚晓迪")
+                        .age(35)
+                        .gender("男")
+                        .build(),
+
+                User.builder()
+                        .name("龚晓曦")
+                        .age(18)
+                        .gender("女")
+                        .build()
+        );
+
+        int maxAge = userStream.map(User::getAge).max((o1, o2) -> {
+            if (o1 > o2) {
+                return 1;
+            }
+
+            if (o1 < o2) {
+                return -1;
+            }
+
+            return 0;
+        }).orElse(0);
+
+        System.out.println(String.valueOf(maxAge));
     }
 }

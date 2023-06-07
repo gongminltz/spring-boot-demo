@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO" packages = "org.example.log4j2.sensitive">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+        </Console>
+        <Rewrite name="rewrite">
+            <AppenderRef ref="Console"/>
+            <SensitiveRewritePolicy
+                    prefix=":="
+                    scanList = "1,2,3,4"
+                    replaceList = "1,2,3,4"
+                    defaultReplace = "12"
+                    replaceHash = "md5"
+            />
+        </Rewrite>
+    </Appenders>
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="rewrite" />
+        </Root>
+    </Loggers>
+</Configuration>
